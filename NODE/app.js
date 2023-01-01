@@ -36,3 +36,18 @@ app.post("/post", async(req,res) => {
         }
     
 });
+
+//Import the schema
+require("./userDetails");
+
+//Create variable called user and access the created model
+const User = mongoose.model("UserInfo");
+
+//Create and register API which we can register any user
+app.post("/register",async(req,res)=>{
+    try{
+
+    }catch (error){
+        
+    }
+})
